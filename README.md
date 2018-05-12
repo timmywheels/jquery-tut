@@ -1,6 +1,5 @@
-# PSD-to-HTML-1
-Source code for TheNetNinja tutorial playlist - PSD to HTML &amp; CSS Series 1 (unresponsive)
+# CareerDevs 3.a.e - Tim Wheeler
 
-Yo ninjas, this is the final code from the YouTube NetNinjas playlist - PSD to HTML &amp; CSS Series 1 (unresponsive).
+## jQuery for Beginners
 
-You can view the playlist at https://www.youtube.com/playlist?list=PL4cUxeGkcC9jjVlRiZnRnAGFSCK3Lu_i-
+Section 1 Branch: Parts 1, 2, & 3
