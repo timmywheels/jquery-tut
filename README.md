@@ -2,6 +2,10 @@
 
 ## jQuery for Beginners
 
-Section 1 Branch: Parts 1, 2, & 3
+#### Branches
 
-Section 2 Branch: Parts 4, 5, & 6
+section-1: Parts 1, 2, & 3
+
+section-2: Parts 4, 5, & 6
+
+section-3: Parts 7, 8, & 9
