@@ -86,3 +86,58 @@ var tweet = "<div style ='margin: 20px 0; padding: 10px; background: #eee'>The b
 // .after() adds content after element
 // .html() changes the whole html of the element
 // .text() changes the text of an element
+
+//----------
+
+// $('section').wrap('<div>');
+// $('section').unwrap();
+// $('section').wrapAll('<div>');
+
+
+// .wrap() //wraps all matched elements individually
+// .unwrap() //unwraps all matched elements
+// .wrapAll() //wraps all elements combined with one single element
+
+var wrapper = "<div class='wrapper'>";
+var button = $('.button');
+var wrapped = true;
+
+button[0].onclick = function(){
+    
+  if(wrapped){
+      $('section').unwrap();
+      wrapped = false;
+      button.text('Wrap');
+  } else {
+      $('section').wrapAll(wrapper);
+      wrapped = true;
+      button.text('Unwrap');
+
+  } 
+};
+
+//----------
+
+// $('.button').empty();
+
+// $('#points-of-sale').empty();
+
+// $('.button').remove();
+
+// $('#contact img').remove();
+
+
+// .empty() //empties the inner HTML of an element
+// .remove() //removes the element completely
+
+
+//----------
+
+// $('#contact img').removeAttr('alt');
+
+// $('#contact img').attr('alt', 'location');
+
+// console.log($('#contact img').attr('alt'));
+
+// .removeAttr() //removes attribute completely
+// .attr() //can read or set any attribute
