@@ -296,12 +296,87 @@ button[0].onclick = function(){
 
 // });
 
+// $(document).ready(function(){
+  
+//   $('img[alt=map]').on('click', function(){
+
+//     $('section > h2').toggle(1000);
+  
+//   });
+
+// });
+
+// ---------
+
+// $(document).ready(function(){
+  
+//   $('.slide-button-up').on('click', function(){
+
+//     $('#lead-banner').slideUp(100);
+  
+//   });
+  
+//     $('.slide-button-down').on('click', function(){
+
+//     $('#lead-banner').slideDown(4000, function(){
+//       alert('animation complete');
+//     });
+  
+//   });
+
+// });
+
+// $(document).ready(function(){
+  
+//   $('.slide-button-up').on('click', function(){
+
+//     $('#lead-banner').slideToggle(1000);
+  
+//   });
+
+// });
+
+
+
+//-----------
+
 $(document).ready(function(){
   
-  $('img[alt=map]').on('click', function(){
-
-    $('section > h2').toggle(1000);
+  var allQuotes = $('blockquote');
+  var currentQuote = 0;
   
-  });
+  function changeQuote(){
+    
+    $(allQuotes[currentQuote]).fadeOut(500, function(){
+      
+      if(currentQuote == allQuotes.length - 1){
+        currentQuote = 0;
+      } else {
+          currentQuote++;
+      }
+      
+      $(allQuotes[currentQuote]).fadeIn(500);
+      
+    });
+    
+  };
+  
+  var quoteTimer = setInterval(changeQuote, 3000);
+  
+  
+});
 
+
+//----------
+
+$(document).ready(function(){
+  
+  var items = $('#points-of-sale li');
+  
+  items.on('click', function(){
+    
+    $(this).find('p').slideToggle(500);
+    
+  });
+  
 });

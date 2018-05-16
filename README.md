@@ -17,3 +17,5 @@ section-5: Parts 13, 14, & 15
 section-6: Parts 16, 17, & 18
 
 section-7: Parts 19, 20, & 21
+
+section-8: Parts 22, 23, & 24
