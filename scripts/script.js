@@ -191,3 +191,49 @@ myLis.on('click', function(){
 
 // .on() //binds an event to matched element(s)
 // .off() //unbinds event from matched element(s)
+
+// ----------
+
+// $('#lead-banner').click(function(){
+//   alert('You clicked me')
+// });
+
+// $('#lead-banner').dblclick(function(){
+//   alert('You double-clicked me');
+//   $('#lead-banner').off('dblclick');
+// });
+
+
+// ----------
+
+// $(document).ready(function(){
+  
+// });
+
+// $(function(){ //shorthand version of the above
+  
+// });
+
+// $(window).on('load', function(){ //better when images need to be loaded, etc.
+  
+// });
+
+// $(window).load(function(){ //shorthand of the above
+  
+// });
+
+
+// -----------
+
+$(document).ready(function(){
+  
+  $('*').on('click', function(e){
+    console.log('The event target is:', e.target);
+    console.log('The event type is:', e.type);
+    console.log('The X coordinate of the event is:', e.pageX);
+    console.log('The Y coordinate of the event is:', e.pageY);
+    e.stopPropagation(); //stops bubbling
+  });  
+  
+});
+
