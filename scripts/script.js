@@ -141,3 +141,53 @@ button[0].onclick = function(){
 
 // .removeAttr() //removes attribute completely
 // .attr() //can read or set any attribute
+
+//----------
+
+// console.log($('#social-nav').css('position'));
+
+// console.log($('#social-nav').css('top'));
+
+// $('#social-nav').css('top', '-200px').css('left', '100px');
+
+// $('#social-nav').css({
+//     'top': '-400px',
+//     'left': '150px',
+//     'opacity': '0.5',
+//     'border-top': '4px solid red'
+// });
+
+// ----------
+
+// $('header .wrapper').removeClass('wrapper');
+// $('header > div').removeClass('wrapper');
+
+// .removeClass() // removes a class from matched element(s)
+// .addClass() // adds a class to the matched elements
+// .toggleClass() // toggles the class of the matched elements on and off
+
+var button = $('#lead-banner a');
+
+button[0].onclick = function(){
+  
+  $('#points-of-sale').toggleClass('open');
+  return false;
+  
+};
+
+// ----------
+
+
+var myLis = $('#points-of-sale li');
+
+myLis.on('click', function(){
+  
+  $(this).css({'background': 'pink'});
+  
+  myLis.off('click');
+  
+});
+
+
+// .on() //binds an event to matched element(s)
+// .off() //unbinds event from matched element(s)
