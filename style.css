@@ -372,6 +372,7 @@ section#points-of-sale ul{
 
 blockquote{
     display: none;
+    width: 100% !important;
 }
 
 blockquote:first-of-type{
